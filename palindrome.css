@@ -1,0 +1,54 @@
+:root {
+  --main-color: #F9F6EE;
+  --second-color: #000000;
+  --third-color:  #f9004d;
+  --fourth-color: #F9FEFF;
+}
+body{
+  background-color:var(--main-color);
+  font-family: "Source Sans Pro", "Arial", sans-serif; 
+  color: var(--second-color);
+}
+.title{
+  padding:20px;
+  padding-bottom: 10px;
+  text-align:center;
+  font-weight:bold;
+  font-size:20px;
+  margin-top:30px;
+}
+.input-form{
+  text-align:center;
+  padding:20px;
+  font-size:18px;
+  z-index: 2;
+}
+#check-btn{
+    background-color: var(--third-color);
+    color:white;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+#check-btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--third-color);
+    cursor: pointer;
+    color:  var(--second-color);
+}
+#text-input{
+   border: 2px solid var(--third-color);
+    padding: 13px 30px;
+    border-radius: 30px; 
+}
+#result{
+  text-align: center;
+  font-family: "Source Sans Pro", "Arial", sans-serif;
+  color: var(--second-color);
+  font-weight: bold;
+  font-size: 20px;
+  z-index: 1;
+  
+}
