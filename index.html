@@ -10,6 +10,7 @@
   <div class="title">
     <h2>Is it a palindrome?<h2>
   </div>
+<div class="main">
   <form class ="input-form">
     <p>Enter in text to check for a palindrome</p>
     <input type="text" id="text-input">
@@ -17,6 +18,30 @@
     <div class="result"></div>
   </form>
      <div id="result"></div>
+</div>
+     <div id="hint">
+      <svg width="70" height="90" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+        
+        <!-- Bulb Outline -->
+        <ellipse class="bulb-body" cx="100" cy="100" rx="60" ry="90"/>
+        
+        <!-- Filament -->
+        <line class="filament" x1="100" y1="50" x2="100" y2="110"/>
+        <circle class="filament" cx="100" cy="50" r="5"/>
+        
+        <!-- Screw Base -->
+        <rect class="base" x="70" y="180" width="60" height="30"/>
+        
+        <!-- Screw Threads -->
+        <line class="filament" x1="70" y1="190" x2="130" y2="190"/>
+        <line class="filament" x1="70" y1="200" x2="130" y2="200"/>
+        <line class="filament" x1="70" y1="210" x2="130" y2="210"/>
+        
+        <!-- Bottom Contact -->
+        <circle class="filament" cx="100" cy="220" r="5"/>
+      </svg>
+      <p class="hint">A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward (ignoring spaces, punctuation, and capitalization). </p>
+     </div>
      <script src = "./palindrome.js"></script>
 </body>
 </html>
