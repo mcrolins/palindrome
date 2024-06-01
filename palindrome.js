@@ -29,3 +29,14 @@ function isInputEpmty (event) {
 } 
 
 checkBtn.addEventListener("click", isInputEpmty);
+const sentence = "A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward (ignoring spaces, punctuation, and capitalization)."
+const hintDisplay = document.getElementById('hint-display')
+let delay = 0;
+const interval = 250;
+const words = sentence.split(" ");
+words.forEach((word, index) => {
+  setTimeout(()=>{
+    hintDisplay.textContent += (index=== 0?'':' ') + word;
+  }, delay);
+  delay += interval;
+})
